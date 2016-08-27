@@ -3,8 +3,7 @@ angular.module('gservice', [])
     .factory('gservice', function($rootScope, $http){
 
         // Initialize Variables
-        // -------------------------------------------------------------
-        // Service our factory will return
+
         var googleMapService = {};
         googleMapService.clickLat  = 0;
         googleMapService.clickLong = 0;
@@ -16,7 +15,6 @@ angular.module('gservice', [])
         var lastMarker;
         var currentSelectedMarker;
 
-        // User Selected Location (initialize to center of America)
         var selectedLat = 39.50;
         var selectedLong = -98.35;
 
@@ -187,4 +185,3 @@ angular.module('gservice', [])
 
         return googleMapService;
     });
-
